@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "predev": "pnpm --filter @ladder/limejs build && node scripts/copy-limejs.mjs",
+    "prebuild": "pnpm --filter @ladder/limejs build && node scripts/copy-limejs.mjs",
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
