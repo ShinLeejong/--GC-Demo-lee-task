@@ -47,12 +47,15 @@ class Node {
     this.el.style.left = `${this._x}px`;
     this.el.style.top = `${this._y}px`;
 
-    this.el.style.transform = `translate(${-this._ax * this._w}px, ${-this._ay * this._h}px)`;
+    const tx = -this._ax * 100;
+    const ty = -this._ay * 100;
+    this.el.style.transform = `translate(${tx}%, ${ty}%)`;
     this.el.style.transformOrigin = `${this._ax * 100}% ${this._ay * 100}%`;
 
     if (this._w) this.el.style.width = `${this._w}px`;
     if (this._h) this.el.style.height = `${this._h}px`;
   }
+
 
   appendChild(child: Node) {
     this.children.push(child);

@@ -10,7 +10,7 @@ mygame.start = function (scene) {
     .setSize(400, 400)
     .setFill("#b0b0b0")
     .setPosition(100, 0)      // 씬 좌표에서 박스 앵커(0.5,0.5)가 (100,0)
-    .setAnchorPoint(0.5, 0.5);
+    .setAnchorPoint(0, 0);
 
   scene.appendChild(obj);
 
