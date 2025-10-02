@@ -1,0 +1,26 @@
+{
+  "name": "@ladder/limejs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/limejs.umd.js",
+  "exports": {
+    ".": {
+      "require": "./dist/limejs.umd.js",
+      "default": "./dist/limejs.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.0",
+    "rollup": "^4.20.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^5.6.0",
+    "rollup-plugin-typescript2": "^0.36.0"
+  }
+}
